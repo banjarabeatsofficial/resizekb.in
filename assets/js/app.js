@@ -78,12 +78,9 @@ function compressImageNearTarget(img, targetKB) {
     return;
   }
 
-  preview.src = bestOutput;
-  downloadBtn.href = bestOutput;
-  downloadBtn.download = `resizekb-under-${targetKB}kb.jpg`;
-
-  newSize.textContent = `${(bestSize / 1024).toFixed(2)} KB ✅ Under ${targetKB}KB`;
-  result.style.display = "block";
+targetOutput.textContent = `${targetKB}KB`;
+newSize.textContent = `${(bestSize / 1024).toFixed(2)} KB`;
+statusText.textContent = `✅ Successfully resized under ${targetKB}KB`;
 }
 
 function dataURLSize(dataURL) {
