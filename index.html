@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ResizeKB</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1>ResizeKB</h1>
+<p>Resize Images to Exact KB Online</p>
+</header>
+
+<div class="container">
+
+<input type="file" id="imageInput">
+
+<select id="targetSize">
+<option value="20">20 KB</option>
+<option value="50">50 KB</option>
+<option value="100" selected>100 KB</option>
+<option value="200">200 KB</option>
+</select>
+
+<button id="resizeBtn">Resize Image</button>
+
+<div id="result">
+<p>Original Size:
+<span id="originalSize"></span>
+</p>
+
+<p>
+New Size:
+<span id="newSize"></span>
+</p>
+
+<img id="preview">
+
+<br>
+
+<a id="downloadBtn">Download Image</a>
+
+</div>
+
+</div>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
