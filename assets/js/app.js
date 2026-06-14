@@ -1,3 +1,5 @@
+const targetOutput = document.getElementById("targetOutput");
+const statusText = document.getElementById("statusText");
 const imageInput = document.getElementById("imageInput");
 const targetSize = document.getElementById("targetSize");
 const resizeBtn = document.getElementById("resizeBtn");
