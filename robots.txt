@@ -1,5 +1,4 @@
 User-agent: *
-
 Allow: /
 
 Sitemap: https://resizekb-cij.pages.dev/sitemap.xml
